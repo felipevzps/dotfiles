@@ -1,13 +1,10 @@
-# mybash
+# dotfiles
 
-### usage
+### usage 
 
 ```bash
-# clone this repo
-git clone https://github.com/felipevzps/mybash.git
-
-# move .tmux.conf to homedir after cloning
-cd ~/ && cp mybash/.tmux.conf . 
+# move .tmux.conf to homed after cloning
+cd ~/ && cp dotfiles/.tmux.conf . 
 
 # download plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
