@@ -39,4 +39,17 @@ Ctrl+b %
 
 # horizontal split
 Ctrl+b "
+
+# create new window in active session
+Ctrl+b c
+
+# rename active window (new window) in active session
+Ctrl+b ,
+
+# delete active window 
+Ctrl+b d
+
+# change window in same session
+Ctrl+b 1 # go to window 1
+Ctrl+b 2 # go to window 2
 ```
