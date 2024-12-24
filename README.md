@@ -71,12 +71,24 @@ Ctrl+b "
 ### nvim cheat sheet
 
 ```bash
-# find files
-\ff
+# find files (telescope)
+<leader>ff
 
-# grep files
-\fg
+# grep files (telescope)
+<leader>fg
 
-# jump to project view
-\pv
+# jump to project view (nvim)
+<leader>pv
+
+# jump to right window  
+"<C-w>l"
+
+# jump to left window  
+"<C-w>h"
+
+# jump to top window 
+"<C-w>k"
+
+# jump to bottom window  
+"<C-w>j"
 ```
