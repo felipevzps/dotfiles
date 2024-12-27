@@ -105,7 +105,7 @@ return {
         end
 
         -- create file using template
-        vim.api.nvim_set_keymap("n", "<leader>todo", [[:ObsidianNewFromTemplate <CR>]], { noremap = true, silent = true })
+        vim.api.nvim_set_keymap("n", "<leader>temp", [[:ObsidianNewFromTemplate <CR>]], { noremap = true, silent = true })
 
         -- generate new note from link
         vim.api.nvim_set_keymap("v", "<leader>ll", [[:ObsidianLinkNew<CR>]], { noremap = true, silent = true })
