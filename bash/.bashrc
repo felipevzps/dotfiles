@@ -35,6 +35,11 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
+# change terminal to xterm-256color if in a ssh connection (continues to use kitty locally)
+if [ -n "$SSH_CONNECTION" ]; then
+    export TERM=xterm-256color
+fi
+
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
@@ -134,3 +139,7 @@ unset __conda_setup
 
 
 source /home/felipevzps/.bash_completions/benchllama.sh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
