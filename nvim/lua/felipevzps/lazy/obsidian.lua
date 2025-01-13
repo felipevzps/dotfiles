@@ -23,9 +23,9 @@ return {
                 enable = false, -- disable all additional syntax feature
             },
 
-            disable_frontmatter = false, -- 'true' to disable obsidian.nvim frontmatter
+            disable_frontmatter = true, -- 'true' to disable obsidian.nvim frontmatter
 
-            notes_subdir = "inbox",
+            notes_subdir = "workspace/inbox",
 
             new_notes_location = "notes_subdir",
 
