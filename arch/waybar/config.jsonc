@@ -8,7 +8,7 @@
     "height": 30,
     "modules-left": ["custom/launch_wofi", "wlr/workspaces"], //["custom/launch_wofi","wlr/workspaces","cpu","memory","disk","hyprland/window"],
     "modules-center": ["clock", "custom/updates"], //["custom/lock_screen" ,"custom/power_btn"],
-    "modules-right": ["battery", "pulseaudio", "pulseaudio#microphone", "custom/lock_screen", "custom/power_btn"], //["temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
+    "modules-right": ["battery", "pulseaudio", "pulseaudio#microphone", "tray", "backlight", "custom/lock_screen", "custom/power_btn"], //["temperature","custom/power_profile","battery","backlight","pulseaudio","pulseaudio#microphone","tray","custom/weather","custom/light_dark"],
     
     "hyprland/window": {
         "format": "{}"

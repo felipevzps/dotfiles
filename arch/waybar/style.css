@@ -29,7 +29,7 @@ tooltip label {
 #workspaces button {
     padding: 0 8px; /* Espaçamento interno */
     color: #313244;
-    margin-right: 0;
+    margin-right: 5px; /* 0 */
 }
 
 #workspaces button.active {
@@ -89,7 +89,7 @@ tooltip label {
 
 #workspaces {
     padding-right: 0;
-    padding-left: 0;
+    padding-left: 0px;
 }
 
 #custom-power_profile {
