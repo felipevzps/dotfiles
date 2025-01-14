@@ -5,6 +5,8 @@ require("felipevzps.netrw")
 
 vim.cmd('colorscheme habamax')
 
+vim.keymap.set({ 'n', 'x' }, 'y', '"+y')
+
 -- use terminal transparency (tmux)
 vim.cmd('hi Normal guibg=NONE ctermbg=NONE')
 vim.cmd('hi NonText guibg=NONE ctermbg=NONE')
