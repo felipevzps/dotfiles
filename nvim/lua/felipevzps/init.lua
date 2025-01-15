@@ -1,7 +1,7 @@
 require("felipevzps.remap")
 require("felipevzps.lazy_init")
 require("felipevzps.set")
-require("felipevzps.netrw")
+--require("felipevzps.netrw")
 
 vim.cmd('colorscheme habamax')
 
