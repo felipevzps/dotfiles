@@ -10,7 +10,6 @@
   margin: auto;
   padding: 10px;
   border-radius: 10px;
-  border: 2px solid rgba(205, 214, 244, 0.7);
 }
 
 #input {
@@ -19,14 +18,7 @@
   border-radius: 10px;
   border: none;
   background-color: rgba(33, 32, 46, 0.6);
-}
-
-#outer-box {
-  padding: 10px;
-}
-
-#img {
-  margin-right: 6px;
+  box-shadow: none;
 }
 
 #entry {
