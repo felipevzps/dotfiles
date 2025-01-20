@@ -25,7 +25,7 @@ return {
 
             disable_frontmatter = true, -- 'true' to disable obsidian.nvim frontmatter
 
-            notes_subdir = "workspace/inbox",
+            notes_subdir = "inbox",
 
             new_notes_location = "notes_subdir",
 
