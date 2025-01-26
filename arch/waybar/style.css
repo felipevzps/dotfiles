@@ -8,18 +8,18 @@
 }
 
 window#waybar {
-    background: #1e1e2e;
+    background: #353535;
     opacity: 0.8;
     color: #cdd6f4;
 }
 
 tooltip {
-    background: #1e1e2e;
+    background: #353535;
     opacity: 0.8;
-    border-radius: 10px;
+    border-radius: 5px;
     border-width: 2px;
     border-style: solid;
-    border-color: #11111b;
+    border-color: #3b3b3b;
 }
 
 tooltip label {
@@ -27,9 +27,9 @@ tooltip label {
 }
 
 #workspaces button {
-    padding: 0 8px; /* Espaçamento interno */
+    padding: 0 8px;
     color: #313244;
-    margin-right: 5px; /* 0 */
+    margin-right: 0px;
 }
 
 #workspaces button.active {
@@ -51,49 +51,32 @@ tooltip label {
     color: #cdd6f4;
 }
 
-#custom-launch_wofi,
-#custom-lock_screen,
-#custom-light_dark,
-#custom-power_btn,
-#custom-power_profile,
-#custom-weather,
 #window,
-#cpu,
-#disk,
-#custom-updates,
-#memory,
+#custom-launch_wofi,
+#workspaces,
 #clock,
+#custom-updates,
 #battery,
 #pulseaudio,
-#network,
 #tray,
-#temperature,
-#workspaces,
-#backlight {
+#backlight,
+#custom-lock_screen,
+#custom-power_btn {
     background: transparent;
     opacity: 0.8;
-    padding: 0 10px; /* Espaçamento interno */
-    margin: 0 4px 0 0; /* Espaçamento externo à direita */
+    padding: 0 10px; 
+    margin: 0 4px 0 0;
     border: 0;
 }
 
-#tray, #custom-lock_screen, #temperature, #backlight, #custom-launch_wofi, #cpu,
-#custom-light_dark, #custom-power_btn, #workspaces, #pulseaudio.microphone, #battery, #disk {
+#tray, #custom-lock_screen, #backlight, #custom-launch_wofi, #custom-power_btn, #workspaces, #pulseaudio.microphone, #battery {
     border-radius: 0;
     margin-right: 0;
-}
-
-#temperature.critical {
-    color: #e92d4d;
 }
 
 #workspaces {
     padding-right: 0;
     padding-left: 0px;
-}
-
-#custom-power_profile {
-    color: #a6e3a1;
 }
 
 #window {
@@ -106,6 +89,10 @@ tooltip label {
     margin-left: 0;
 }
 
+#battery {
+    color: #a6e3a1;
+}
+
 #pulseaudio {
     color: #89b4fa;
 }
@@ -114,6 +101,10 @@ tooltip label {
     color: #cba6f7;
 }
 
-#battery {
-    color: #a6e3a1;
+#backlight {
+    color: #ffe599;
+}
+
+#custom-power_btn {
+    color: #e06666;
 }
