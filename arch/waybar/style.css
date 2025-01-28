@@ -59,6 +59,8 @@ tooltip label {
 #battery,
 #pulseaudio,
 #tray,
+#network,
+#bluetooth,
 #backlight,
 #custom-lock_screen,
 #custom-power_btn {
@@ -69,7 +71,7 @@ tooltip label {
     border: 0;
 }
 
-#tray, #custom-lock_screen, #backlight, #custom-launch_wofi, #custom-power_btn, #workspaces, #pulseaudio.microphone, #battery {
+#tray, #network, #bluetooth, #custom-lock_screen, #backlight, #custom-launch_wofi, #custom-power_btn, #workspaces, #pulseaudio.microphone, #battery {
     border-radius: 0;
     margin-right: 0;
 }
@@ -89,6 +91,7 @@ tooltip label {
     margin-left: 0;
 }
 
+/*
 #battery {
     color: #a6e3a1;
 }
@@ -108,3 +111,4 @@ tooltip label {
 #custom-power_btn {
     color: #e06666;
 }
+*/

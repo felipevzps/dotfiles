@@ -8,7 +8,7 @@
     "height": 30,
     "modules-left": ["custom/launch_wofi", "hyprland/workspaces"], 
     "modules-center": ["clock", "custom/updates"], 
-    "modules-right": ["battery", "pulseaudio", "pulseaudio#microphone", "tray", "backlight", "custom/lock_screen", "custom/power_btn"],
+    "modules-right": ["battery", "pulseaudio", "pulseaudio#microphone", "network", "bluetooth", "backlight", "custom/lock_screen", "custom/power_btn"],
     
     "hyprland/window": {
         "format": "{}"
@@ -98,9 +98,27 @@
         "tooltip": false
     },
 
-     "tray": {
+    "tray": {
         "icon-size": 18,
-        "spacing": 10
+        "spacing": 10,
+        "ignore-list": ["nm-applet", "blueman-applet"]
+    },
+
+    "network": {
+        "format-wifi": " ",
+        "format-ethernet": "󰈀 ",
+        "format-disconnected": "󰖪 ",
+        "tooltip": false,
+        "on-click": "nm-connection-editor"
+    },
+
+    "bluetooth": {
+        "format": "",
+        "format-disabled": "󰂲",
+        "format-enabled": "",
+        "format-connected": "",
+        "tooltip": false,
+        "on-click": "blueman-manager"
     },
 
     "backlight": {
