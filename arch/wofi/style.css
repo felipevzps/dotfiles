@@ -5,7 +5,7 @@
 }
 
 #window {
-  background: rgba(53, 53, 53, 0.5);
+  background: rgba(53, 53, 53, 0);
   backdrop-filter: blur(15px);
   margin: auto;
   padding: 10px;
@@ -17,7 +17,7 @@
   margin-bottom: 10px;
   border-radius: 10px;
   border: none;
-  background-color: rgba(33, 32, 46, 0.6);
+  background-color: rgba(33, 32, 46, 0.3);
   box-shadow: none;
 }
 
