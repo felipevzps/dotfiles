@@ -25,7 +25,7 @@ return {
 
             disable_frontmatter = true, -- 'true' to disable obsidian.nvim frontmatter
 
-            notes_subdir = "inbox",
+            notes_subdir = "workspace/inbox",
 
             new_notes_location = "notes_subdir",
 
@@ -34,7 +34,7 @@ return {
             --markdown_link_func = "use_alias_only",
             
             templates = {
-                folder = "templates",
+                folder = "workspace/templates",
                 date_format = "%Y-%m-%d-%a",
                 time_format = "%H:%M",
                 substitutions = {
