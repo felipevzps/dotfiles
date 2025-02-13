@@ -1,13 +1,11 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "type": "kitty",
-        "color": {
-            "1": "blue",
-            "2": "blue",
-        },
+        "source": "~/.config/fastfetch/magi2.jpeg",
+        "height": 19,
+        "width": 50,
         "padding": {
-            "top": 2,
+            "top": 1,
             "left": 3
         }
     },
@@ -34,13 +32,13 @@
             "keyColor": "blue"
         },
        {
-            "type": "disk",
-            "key": "│ ├",
+            "type": "memory",
+            "key": "│ ├󰍛",
             "keyColor": "blue"
         },
         {
-            "type": "memory",
-            "key": "└ └󰍛",
+            "type": "disk",
+            "key": "└ └",
             "keyColor": "blue"
         },
  
