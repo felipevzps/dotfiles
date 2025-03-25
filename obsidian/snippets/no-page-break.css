@@ -1,0 +1,7 @@
+/* avoid block break during PDF export */ 
+.callout,
+table,
+pre,
+blockquote {
+    page-break-inside: avoid;
+}
