@@ -1,6 +1,5 @@
-/* add theme-dark */
 .theme-dark {
-  --background-primary: #000;
-  --background-secondary: #000;
-  --titlebar-background-focused: #000;
+  --background-primary: #060608;
+  --background-secondary: #060608;
+  --titlebar-background-focused: #060608;
 }
