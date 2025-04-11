@@ -2,14 +2,11 @@
     "layer": "top",
     "position": "top",
     "mod": "dock",
-    "exclusive": true,
-    "passthrough": false,
-    "gtk-layer-shell": true,
     "height": 30,
     "modules-left": ["custom/launch_wofi", "hyprland/workspaces"], 
     "modules-center": ["clock", "custom/updates"], 
-    "modules-right": ["battery", "pulseaudio", "pulseaudio#microphone", "network", "bluetooth", "backlight", "custom/lock_screen", "custom/power_btn"],
-    
+    //"modules-right": ["battery", "pulseaudio", "pulseaudio#microphone", "network", "bluetooth", "backlight", "custom/lock_screen", "custom/power_btn"],
+    "modules-right": ["group/custom-group"],
     "hyprland/window": {
         "format": "{}"
     },
@@ -40,8 +37,28 @@
  
     "clock": {
         "format": "{:%H:%M}",
-        "tooltip": true,
-        "tooltip-format": "{:%A, %B %e %Y}"
+        //"tooltip": true,
+        //"tooltip-format": "{:%A, %B %e %Y}"
+        "tooltip-format": "<span>{calendar}</span>",
+        "calendar": {
+            "mode": "year",
+            "mode-mon-col": 3,
+            "on-scroll": 1,
+            "weeks-pos": "right",
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            },
+        },
+        "actions":  {
+                    "on-click-right": "mode",
+                    "on-scroll-up": "tz_up",
+                    "on-scroll-down": "tz_down",
+                    "on-scroll-up": "shift_up",
+                    "on-scroll-down": "shift_down"
+                    }
     },
 
     "custom/updates": {
@@ -49,7 +66,7 @@
         "exec": "~/.config/waybar/scripts/update-sys",
         "on-click": "~/.config/waybar/scripts/update-sys update",
         "interval": 300,
-        "tooltip": true
+        "tooltip": false
     },
 
     "battery": {
@@ -113,10 +130,10 @@
     },
 
     "bluetooth": {
-        "format": "",
+        "format": "󰂯",
         "format-disabled": "󰂲",
-        "format-enabled": "",
-        "format-connected": "",
+        "format-enabled": "󰂯",
+        "format-connected": "󰂯",
         "tooltip": false,
         "on-click": "blueman-manager"
     },
@@ -142,4 +159,21 @@
         "on-click": "sh -c '(wlogout --protocol layer-shell --buttons-per-row 5)' & disown",
         "tooltip": false
     },
+
+    "group/custom-group": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 500,
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/power_btn",
+            "battery",
+            "pulseaudio",
+            "pulseaudio#microphone",
+            "network",
+            "bluetooth",
+            "backlight"
+        ]
+    }
 }

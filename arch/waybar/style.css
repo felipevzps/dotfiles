@@ -13,12 +13,14 @@ window#waybar {
 }
 
 tooltip {
-    background: #353535;
+    /*background: alpha(#353535, 0.5);*/
+    background: alpha(#14151b, 0.9);
     opacity: 0.8;
     border-radius: 5px;
     border-width: 2px;
     border-style: solid;
-    border-color: #3b3b3b;
+    /*border-color: #3b3b3b;*/ /* inactive border color */
+    border-color: #B4BEFE;     /* active border color */
 }
 
 tooltip label {
@@ -46,7 +48,8 @@ tooltip label {
 }
 
 #workspaces button:hover {
-    background: #11111b;
+    background: transparent;
+    /*background: #11111b;*/
     color: #cdd6f4;
 }
 
@@ -90,6 +93,9 @@ tooltip label {
     margin-left: 0;
 }
 
+#calendar {
+    font-family: "JetBrainsMono Nerd Font";
+}
 /*
 #battery {
     color: #a6e3a1;
