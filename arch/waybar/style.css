@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-    background-color: alpha(#353535, 0); /* avoid opacity as described here: https://github.com/Alexays/Waybar/issues/3492 */
+    background-color: alpha(#353535, 0.1); /* avoid opacity as described here: https://github.com/Alexays/Waybar/issues/3492 */
     color: #cdd6f4;
 }
 
