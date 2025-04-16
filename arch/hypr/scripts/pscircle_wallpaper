@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+swww query || swww init
+
+IMG_PATH="/tmp/pscircle_wall.png"
+TMP_IMG_PATH="/tmp/pscircle_wall_tmp.png"
+HASH_PATH="/tmp/pscircle_last.hash"
+
+# generate temporary image
+generate_image() {
+    pscircle --output="$TMP_IMG_PATH" 
+}
+
+while true; do
+    generate_image
+
+    # calc hash of new image
+    new_hash=$(sha256sum "$TMP_IMG_PATH" | awk '{print $1}')
+    old_hash=$(cat "$HASH_PATH" 2>/dev/null)
+
+    # compare hashes
+    if [[ "$new_hash" != "$old_hash" ]]; then
+        # save new image
+        mv "$TMP_IMG_PATH" "$IMG_PATH"
+        
+        # updates hash
+        echo "$new_hash" > "$HASH_PATH"
+
+        # updates wallpaper
+        swww img "$IMG_PATH" --transition-type any --transition-step 90
+    fi
+
+    # wait 10s before trying again
+    sleep 10
+done
