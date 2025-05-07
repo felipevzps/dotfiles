@@ -39,35 +39,35 @@ button:hover {
 
 #lock {
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     /*background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));*/
     background-image: image(url("/home/felipevzps/.config/wlogout/icons/lock.png"));
 }
 
 #logout {
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     /*background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));*/
     background-image: image(url("/home/felipevzps/.config/wlogout/icons/logout.png"));
 }
 
 #suspend {
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     /*background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));*/
     background-image: image(url("/home/felipevzps/.config/wlogout/icons/suspend.png"));
 }
 
 #reboot {
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     /*background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));*/
     background-image: image(url("/home/felipevzps/.config/wlogout/icons/reboot.png"));
 }
 
 #shutdown {
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 0px;
     /*background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));*/
     background-image: image(url("/home/felipevzps/.config/wlogout/icons/shutdown.png"));
 }
